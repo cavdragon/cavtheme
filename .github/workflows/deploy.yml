@@ -32,7 +32,7 @@ jobs:
           dangerous-clean-slate: false
 
           exclude: |
-            **/.git*
+            **/.git/**
             **/.github/**
             **/node_modules/**
             **/.vscode/**
