@@ -27,7 +27,7 @@ jobs:
 
           local-dir: ./
 
-          server-dir: /public_html/frikiupmachine/cavsitio/wp-content/themes/cavtheme/
+          server-dir: /frikiupmachine/cavsitio/wp-content/themes/cavtheme/
 
           dangerous-clean-slate: false
 
