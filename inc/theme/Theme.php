@@ -2,13 +2,12 @@
 
 class Theme
 {
-    public static function init()
+    public static function init(): void
     {
-        self::load();
-    }
-
-    private static function load()
-    {
-
+        Setup::init();
+        Menus::init();
+        Header::init();
+        Footer::init();
+        Customizer::init();
     }
 }

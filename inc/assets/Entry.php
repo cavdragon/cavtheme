@@ -10,7 +10,7 @@ class Entry
     {
         $manifest = Manifest::load();
 
-        $key = 'assets/js/' . $entry . '.js';
+        $key = 'src/js/' . $entry . '.js';
 
         return $manifest[$key] ?? [];
     }
