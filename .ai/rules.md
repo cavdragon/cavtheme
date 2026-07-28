@@ -47,6 +47,12 @@ src/scss/
 
 El CSS compilado nunca debe modificarse manualmente.
 
+Para la Marca Personal, mantener una estÃ©tica elegante, premium, minimalista, tecnolÃ³gica y cinematogrÃ¡fica.
+
+No usar colores saturados, neones excesivos, gradientes agresivos, efectos gamer ni decoraciÃ³n sin propÃ³sito.
+
+Los acentos de color deben ser desaturados y cohesionados entre sÃ­. Priorizar contraste tipogrÃ¡fico, espacios amplios, luz sutil y movimiento contenido.
+
 ---
 
 ## JS

@@ -1,0 +1,33 @@
+$footer-background: rgba(17, 19, 21, 0.86);
+$footer-text: rgba(242, 241, 237, 0.72);
+$footer-z-index: 30;
+
+.site-footer {
+    width: 100%;
+    padding: 1.25rem clamp(1.5rem, 4vw, 4rem);
+    background: $footer-background;
+    color: $footer-text;
+    text-align: center;
+}
+
+.site-footer--home {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $footer-z-index;
+}
+
+.site-footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+}
+
+.site-footer__text {
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 1.4;
+}

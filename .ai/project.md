@@ -1,17 +1,59 @@
-CavTheme es un starter premium para WordPress.
+# Proyecto
 
-Debe parecerse a Laravel en organización.
+## Nombre
 
-Debe ser extremadamente escalable.
+Marca Personal
 
-Todo el código debe ser limpio.
+## Concepto
 
-Se prioriza rendimiento.
+Creative Lab
 
-Se evita el uso de plugins cuando sea posible.
+## Filosofía
 
-Todo debe construirse reutilizable.
+No crear interfaces genéricas.
 
-El tema servirá para crear landing pages, blogs, sitios corporativos y eCommerce.
+Todo debe sentirse como un estudio creativo premium.
 
-La IA debe generar componentes reutilizables antes que páginas completas.
+La experiencia debe ser minimalista.
+
+Las animaciones deben tener un propósito.
+
+La prioridad es la elegancia antes que la espectacularidad.
+
+## Inspiración
+
+Apple
+
+Linear
+
+Framer
+
+Stripe
+
+Awwwards
+
+## Estilo
+
+Oscuro
+
+Minimalista
+
+Tecnológico
+
+Editorial
+
+Cinematográfico
+
+## Regla principal
+
+Cada página debe parecer parte del mismo universo visual.
+
+Nunca mezclar estilos diferentes.
+
+## Paleta y tono
+
+La diferenciaciÃ³n entre Ã¡reas del sitio debe ser tonal, no estridente.
+
+Cada secciÃ³n puede tener un acento propio, siempre derivado de una base oscura y desaturada.
+
+La referencia es tecnologÃ­a editorial premium: sobria, precisa y cinematogrÃ¡fica; nunca gamer, neÃ³n o recargada.

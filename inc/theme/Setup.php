@@ -13,6 +13,11 @@ class Setup
 
     public static function setup(): void
     {
-        // add_theme_support(...)
+        add_theme_support('title-tag');
+
+        add_theme_support('custom-logo', [
+            'flex-height' => true,
+            'flex-width'  => true,
+        ]);
     }
 }

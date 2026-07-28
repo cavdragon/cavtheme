@@ -15,7 +15,6 @@ class Menus
     {
         register_nav_menus([
             'primary' => __('Primary Menu', 'cavtheme'),
-            'footer'  => __('Footer Menu', 'cavtheme'),
         ]);
     }
 }
