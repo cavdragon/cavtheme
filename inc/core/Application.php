@@ -30,6 +30,11 @@ class Application
         |--------------------------------------------------------------------------
         */
 
+        require_once get_template_directory() . '/inc/theme/Setup.php';
+        require_once get_template_directory() . '/inc/theme/Menus.php';
+        require_once get_template_directory() . '/inc/theme/Header.php';
+        require_once get_template_directory() . '/inc/theme/Footer.php';
+        require_once get_template_directory() . '/inc/theme/Customizer.php';
         require_once get_template_directory() . '/inc/theme/Theme.php';
 
         /*
