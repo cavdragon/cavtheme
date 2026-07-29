@@ -1,11 +1,38 @@
 {
+  "src/images/home/contactme.png": {
+    "file": "images/contactme-DUAi14kd.png",
+    "src": "src/images/home/contactme.png"
+  },
+  "src/images/home/contentcreator.jpg": {
+    "file": "images/contentcreator-Cj0lHYK7.jpg",
+    "src": "src/images/home/contentcreator.jpg"
+  },
+  "src/images/home/logocavsitio.png": {
+    "file": "images/logocavsitio-DlMyZI1o.png",
+    "src": "src/images/home/logocavsitio.png"
+  },
+  "src/images/home/maker3d.jpg": {
+    "file": "images/maker3d-BTA6jLv8.jpg",
+    "src": "src/images/home/maker3d.jpg"
+  },
+  "src/images/home/webmaster.png": {
+    "file": "images/webmaster-DravEYGX.png",
+    "src": "src/images/home/webmaster.png"
+  },
   "src/js/main.js": {
-    "file": "js/app-DT3N5kR2.js",
+    "file": "js/app-AxLd23fp.js",
     "name": "app",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "css/app-BDePMJio.css"
+      "css/app-LYz2BYVH.css"
+    ],
+    "assets": [
+      "images/logocavsitio-DlMyZI1o.png",
+      "images/webmaster-DravEYGX.png",
+      "images/contentcreator-Cj0lHYK7.jpg",
+      "images/maker3d-BTA6jLv8.jpg",
+      "images/contactme-DUAi14kd.png"
     ]
   }
 }

@@ -15,7 +15,10 @@ $header-z-index: 30;
 }
 
 .site-header--home .site-header__brand {
-    grid-column: 2;
+    position: absolute;
+    top: 1.5rem;
+    left: 45%;
+    transform: translateX(-50%);
 }
 
 .site-header__brand {
@@ -28,16 +31,19 @@ $header-z-index: 30;
     text-decoration: none;
 }
 
-.site-header__brand .custom-logo-link,
-.site-header__brand .custom-logo {
+.site-header__brand-link,
+.site-header__logo {
     display: block;
 }
 
-.site-header__brand .custom-logo {
-    width: auto;
-    max-width: 9rem;
-    height: 2rem;
-    object-fit: contain;
+.site-header__brand-link {
+    text-decoration: none;
+}
+
+.site-header__logo {
+    width: clamp(10rem, 15vw, 15rem);
+    height: 3.75rem;
+    background: url('../../images/home/logocavsitio.png') center / 100% auto no-repeat;
 }
 
 .site-header__nav {
@@ -71,6 +77,10 @@ $header-z-index: 30;
 @media (max-width: 767px) {
     .site-header {
         padding: 1.25rem;
+    }
+
+    .site-header--home .site-header__brand {
+        top: 1.25rem;
     }
 
     .site-header:not(.site-header--home) {

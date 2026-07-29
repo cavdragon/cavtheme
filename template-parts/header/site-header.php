@@ -9,13 +9,9 @@ $siteName = get_bloginfo('name');
 
 <header class="site-header<?php echo $isHome ? ' site-header--home' : ''; ?>">
     <div class="site-header__brand">
-        <?php if (has_custom_logo()) : ?>
-            <?php the_custom_logo(); ?>
-        <?php else : ?>
-            <a href="<?php echo esc_url(home_url('/')); ?>" aria-label="<?php echo esc_attr(sprintf(__('Ir a %s', 'cavtheme'), $siteName)); ?>">
-                <?php echo esc_html($siteName); ?>
-            </a>
-        <?php endif; ?>
+        <a class="site-header__brand-link" href="<?php echo esc_url(home_url('/')); ?>" aria-label="<?php echo esc_attr(sprintf(__('Ir a %s', 'cavtheme'), $siteName)); ?>">
+            <span class="site-header__logo" aria-hidden="true"></span>
+        </a>
     </div>
 
     <?php if (!$isHome) : ?>

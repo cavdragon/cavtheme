@@ -84,10 +84,10 @@ $home-transition: 560ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
-.home-panel--web::before { background: radial-gradient(circle at 86% 14%, $home-web-light, transparent 27%), linear-gradient(145deg, $home-web-deep, $home-web-surface); }
-.home-panel--content::before { background: radial-gradient(circle at 18% 82%, $home-content-light, transparent 29%), linear-gradient(145deg, $home-content-deep, $home-content-surface); }
-.home-panel--maker::before { background: radial-gradient(circle at 76% 24%, $home-maker-light, transparent 26%), linear-gradient(145deg, $home-maker-deep, $home-maker-surface); }
-.home-panel--contact::before { background: radial-gradient(circle at 18% 20%, $home-contact-light, transparent 28%), linear-gradient(145deg, $home-contact-deep, $home-contact-surface); }
+.home-panel--web::before { background: url('../../images/home/webmaster.png') center / cover no-repeat; }
+.home-panel--content::before { background: url('../../images/home/contentcreator.jpg') center / cover no-repeat; }
+.home-panel--maker::before { background: url('../../images/home/maker3d.jpg') center / cover no-repeat; }
+.home-panel--contact::before { background: url('../../images/home/contactme.png') center / cover no-repeat; }
 
 .home-panel__content {
     display: flex;

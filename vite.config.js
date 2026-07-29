@@ -3,6 +3,10 @@ import path from 'node:path';
 
 export default defineConfig({
 
+    // WordPress entrega el CSS desde /assets/css; las imágenes se resuelven
+    // de forma relativa dentro de esa misma carpeta compilada.
+    base: './',
+
     server: {
         host: '0.0.0.0',
         port: 5173,
@@ -14,8 +18,6 @@ export default defineConfig({
     },
 
     build: {
-
-        base: '/wp-content/themes/cavtheme/assets/',
 
         outDir: 'assets',
 
