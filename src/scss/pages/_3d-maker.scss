@@ -1,0 +1,161 @@
+$maker-ink: #171724;
+$maker-paper: #f1f0fa;
+$maker-muted: rgba(241, 240, 250, 0.7);
+$maker-line: rgba(190, 177, 255, 0.24);
+$maker-accent: #bcaaff;
+
+.maker-3d-page {
+    min-height: 100vh;
+    padding-top: 5.5rem;
+    color: $maker-paper;
+    background: $maker-ink;
+}
+
+.maker-3d-hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 45vh;
+    overflow: hidden;
+    background: url('../../images/home/maker3d.jpg') center / cover no-repeat;
+    isolation: isolate;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        content: '';
+        background: linear-gradient(90deg, rgba(15, 14, 31, 0.9), rgba(21, 18, 42, 0.42) 60%, rgba(18, 15, 36, 0.72)), linear-gradient(0deg, rgba(15, 14, 31, 0.9), transparent 56%);
+    }
+}
+
+.maker-3d-hero__content,
+.maker-3d-layout {
+    width: min(76rem, 100%);
+    margin: 0 auto;
+}
+
+.maker-3d-hero__content {
+    padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+}
+
+.maker-3d-hero__eyebrow,
+.maker-3d-sidebar__title {
+    color: $maker-accent;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.maker-3d-hero__title {
+    max-width: 48rem;
+    margin: 0.65rem 0 1rem;
+    font-size: clamp(2.5rem, 5.2vw, 5.5rem);
+    line-height: 0.92;
+}
+
+.maker-3d-hero__subtitle {
+    max-width: 34rem;
+    margin: 0;
+    color: $maker-muted;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5;
+}
+
+.maker-3d-page--child .maker-3d-hero {
+    min-height: 20vh;
+}
+
+.maker-3d-page--child .maker-3d-hero__content {
+    padding-top: clamp(2rem, 4vw, 3.5rem);
+    padding-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.maker-3d-page--child .maker-3d-hero__title {
+    font-size: clamp(2rem, 4.2vw, 4rem);
+}
+
+.maker-3d-layout {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+}
+
+.maker-3d-sidebar {
+    padding-right: clamp(1.5rem, 4vw, 4rem);
+    border-right: 1px solid $maker-line;
+}
+
+.maker-3d-sidebar__title {
+    margin: 0 0 1.25rem;
+}
+
+.maker-3d-sidebar__menu {
+    display: grid;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+        display: block;
+        padding: 0.65rem 0;
+        border-bottom: 1px solid rgba(190, 177, 255, 0.12);
+        color: $maker-muted;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: color 180ms ease, padding-left 180ms ease;
+
+        &:hover,
+        &:focus-visible {
+            padding-left: 0.45rem;
+            color: $maker-paper;
+        }
+    }
+
+    .current-menu-item > a {
+        color: $maker-accent;
+    }
+}
+
+.maker-3d-content {
+    min-width: 0;
+    padding-left: clamp(2rem, 5vw, 5rem);
+    color: $maker-muted;
+    font-size: 1rem;
+    line-height: 1.7;
+
+    > :first-child { margin-top: 0; }
+
+    h2,
+    h3,
+    h4 {
+        color: $maker-paper;
+    }
+
+    a {
+        color: $maker-accent;
+    }
+}
+
+@media (max-width: 767px) {
+    .maker-3d-page {
+        padding-top: 5rem;
+    }
+
+    .maker-3d-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .maker-3d-sidebar {
+        padding: 0 0 1.5rem;
+        border-right: 0;
+        border-bottom: 1px solid $maker-line;
+    }
+
+    .maker-3d-content {
+        padding-left: 0;
+    }
+}

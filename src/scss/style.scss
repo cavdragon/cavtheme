@@ -2,3 +2,7 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'pages/home';
+@use 'pages/web-development';
+@use 'pages/content-creator';
+@use 'pages/3d-maker' as *;
+@use 'pages/contact';

@@ -21,6 +21,11 @@ $header-z-index: 30;
     transform: translateX(-50%);
 }
 
+.site-header:not(.site-header--home) {
+    background: linear-gradient(90deg, rgba(10, 19, 31, 0.96), rgba(20, 18, 37, 0.94));
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.22);
+}
+
 .site-header__brand {
     grid-column: 1;
     justify-self: start;
@@ -62,7 +67,7 @@ $header-z-index: 30;
     padding-bottom: 0.35rem;
     border-bottom: 1px solid transparent;
     color: $header-text;
-    font-size: 0.8rem;
+    font-size: calc(0.8rem + 2px);
     font-weight: 500;
     text-decoration: none;
     transition: border-color 180ms ease, opacity 180ms ease;

@@ -1,4 +1,12 @@
 {
+  "src/images/contact/camilo-avatar.jpg": {
+    "file": "images/camilo-avatar-BVRdAjQv.jpg",
+    "src": "src/images/contact/camilo-avatar.jpg"
+  },
+  "src/images/cv/fotocamilo.jpg": {
+    "file": "images/fotocamilo-DSu8RsQn.jpg",
+    "src": "src/images/cv/fotocamilo.jpg"
+  },
   "src/images/home/contactme.png": {
     "file": "images/contactme-DUAi14kd.png",
     "src": "src/images/home/contactme.png"
@@ -20,19 +28,21 @@
     "src": "src/images/home/webmaster.png"
   },
   "src/js/main.js": {
-    "file": "js/app-AxLd23fp.js",
+    "file": "js/app-DMJc0z8t.js",
     "name": "app",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "css/app-LYz2BYVH.css"
+      "css/app-DX1o4hql.css"
     ],
     "assets": [
       "images/logocavsitio-DlMyZI1o.png",
       "images/webmaster-DravEYGX.png",
       "images/contentcreator-Cj0lHYK7.jpg",
       "images/maker3d-BTA6jLv8.jpg",
-      "images/contactme-DUAi14kd.png"
+      "images/contactme-DUAi14kd.png",
+      "images/fotocamilo-DSu8RsQn.jpg",
+      "images/camilo-avatar-BVRdAjQv.jpg"
     ]
   }
 }

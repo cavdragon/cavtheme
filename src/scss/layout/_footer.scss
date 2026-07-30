@@ -3,7 +3,6 @@ $footer-text: rgba(242, 241, 237, 0.72);
 $footer-z-index: 30;
 
 .site-footer {
-    width: 100%;
     padding: 1.25rem clamp(1.5rem, 4vw, 4rem);
     background: $footer-background;
     color: $footer-text;

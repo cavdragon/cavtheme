@@ -1,0 +1,337 @@
+$web-ink: #0a101b;
+$web-paper: #f2f1ed;
+$web-muted: rgba(242, 241, 237, 0.68);
+$web-line: rgba(147, 211, 255, 0.2);
+
+.web-development-page {
+    min-height: 100vh;
+    padding-top: 5.5rem;
+    color: $web-paper;
+    background: $web-ink;
+}
+
+.web-development-hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 45vh;
+    overflow: hidden;
+    background: url('../../images/home/webmaster.png') center / cover no-repeat;
+    isolation: isolate;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        content: '';
+        background: linear-gradient(90deg, rgba(5, 11, 20, 0.88) 0%, rgba(7, 14, 26, 0.42) 58%, rgba(7, 14, 26, 0.68) 100%), linear-gradient(0deg, rgba(5, 11, 20, 0.9), transparent 55%);
+    }
+}
+
+.web-development-hero__content {
+    width: min(76rem, 100%);
+    margin: 0 auto;
+    padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+}
+
+.web-development-hero__eyebrow,
+.web-development-sidebar__title {
+    color: #7cddff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.web-development-hero__title {
+    max-width: 48rem;
+    margin: 0.65rem 0 1rem;
+    font-size: clamp(2.5rem, 5.2vw, 5.5rem);
+    line-height: 0.92;
+}
+
+.web-development-hero__subtitle {
+    max-width: 34rem;
+    margin: 0;
+    color: $web-muted;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5;
+}
+
+.web-development-page--child .web-development-hero {
+    min-height: 20vh;
+}
+
+.web-development-page--child .web-development-hero__content {
+    padding-top: clamp(2rem, 4vw, 3.5rem);
+    padding-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.web-development-page--child .web-development-hero__title {
+    font-size: clamp(2rem, 4.2vw, 4rem);
+}
+
+.web-development-layout {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    width: min(76rem, 100%);
+    margin: 0 auto;
+    padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+}
+
+.web-development-sidebar {
+    padding-right: clamp(1.5rem, 4vw, 4rem);
+    border-right: 1px solid $web-line;
+}
+
+.web-development-sidebar__title {
+    margin: 0 0 1.25rem;
+}
+
+.web-development-sidebar__menu {
+    display: grid;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+        display: block;
+        padding: 0.65rem 0;
+        border-bottom: 1px solid rgba(147, 211, 255, 0.1);
+        color: $web-muted;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: color 180ms ease, padding-left 180ms ease;
+
+        &:hover,
+        &:focus-visible {
+            padding-left: 0.45rem;
+            color: $web-paper;
+        }
+    }
+
+    .current-menu-item > a {
+        color: #7cddff;
+    }
+}
+
+.web-development-content {
+    min-width: 0;
+    padding-left: clamp(2rem, 5vw, 5rem);
+    color: $web-muted;
+    font-size: 1rem;
+    line-height: 1.7;
+
+    > :first-child { margin-top: 0; }
+
+    h2,
+    h3,
+    h4 {
+        color: $web-paper;
+    }
+}
+
+.web-cv {
+    color: $web-muted;
+}
+
+.web-cv__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 9rem;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: 3.5rem;
+
+    h2 {
+        margin: 0.5rem 0 1rem;
+        color: $web-paper;
+        font-size: clamp(2rem, 3.5vw, 3.5rem);
+        line-height: 1;
+    }
+}
+
+.web-cv__intro-copy {
+    grid-column: 1;
+    grid-row: 1;
+
+    > p:not(.web-cv__eyebrow) {
+        max-width: 45rem;
+        margin: 0.65rem 0 0;
+    }
+
+    > p:nth-of-type(2) {
+        font-size: 1.1rem;
+    }
+}
+
+.web-cv__portrait {
+    grid-column: 2;
+    grid-row: 1;
+    aspect-ratio: 1;
+    border: 2px solid rgba(124, 221, 255, 0.72);
+    border-radius: 50%;
+    background: url('../../images/cv/fotocamilo.jpg') center 18% / cover no-repeat;
+    box-shadow: 0 0 2rem rgba(53, 186, 255, 0.2);
+}
+
+.web-cv__eyebrow,
+.web-cv__period {
+    color: #7cddff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.web-cv__section {
+    margin-top: 3rem;
+
+    h3 {
+        margin: 0 0 1.25rem;
+        color: $web-paper;
+        font-size: 1.3rem;
+    }
+}
+
+.web-cv__skills {
+    scroll-margin-top: 7rem;
+}
+
+.web-cv__skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.5rem;
+}
+
+.web-cv__skill-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+    color: $web-paper;
+    font-size: 0.88rem;
+
+    span:last-child {
+        color: #7cddff;
+        font-variant-numeric: tabular-nums;
+    }
+}
+
+.web-cv__skill-track {
+    height: 0.45rem;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(147, 211, 255, 0.16);
+}
+
+.web-cv__skill-fill {
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #4ab9e8, #8c6cff);
+    box-shadow: 0 0 0.8rem rgba(75, 193, 255, 0.5);
+    transition: width 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.web-cv__skills.is-visible .web-cv__skill-fill {
+    width: var(--skill-level);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .web-cv__skill-fill {
+        transition-duration: 1ms;
+    }
+
+    .has-js .web-cv__role {
+        transition-duration: 1ms;
+    }
+}
+
+.web-cv__timeline {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.web-cv__role {
+    padding: 0 0 1.5rem 1.25rem;
+    border-bottom: 1px solid rgba(147, 211, 255, 0.14);
+    border-left: 2px solid #456c87;
+
+    h4,
+    p {
+        margin: 0;
+    }
+
+    h4 {
+        margin-top: 0.35rem;
+        color: $web-paper;
+        font-size: 1.1rem;
+    }
+}
+
+.has-js .web-cv__role {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: opacity 850ms ease var(--reveal-delay, 0ms), transform 850ms ease var(--reveal-delay, 0ms);
+}
+
+.has-js .web-cv__role.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.web-cv__role-title {
+    margin: 0.2rem 0 0.6rem !important;
+    color: #a7dffa;
+    font-weight: 600;
+}
+
+.web-cv__section--two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    p {
+        margin: 0 0 1rem;
+    }
+
+    a {
+        color: #7cddff;
+    }
+}
+
+@media (max-width: 767px) {
+    .web-development-page {
+        padding-top: 5rem;
+    }
+
+    .web-development-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .web-development-sidebar {
+        padding: 0 0 1.5rem;
+        border-right: 0;
+        border-bottom: 1px solid $web-line;
+    }
+
+    .web-development-content {
+        padding-left: 0;
+    }
+
+    .web-cv__section--two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .web-cv__skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .web-cv__intro {
+        grid-template-columns: minmax(0, 1fr) 6.5rem;
+        gap: 1.25rem;
+    }
+}

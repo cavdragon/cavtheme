@@ -1,0 +1,228 @@
+$contact-ink: #15201f;
+$contact-paper: #f2f5ef;
+$contact-muted: rgba(242, 245, 239, 0.7);
+$contact-accent: #8ce3cf;
+$contact-card: #22302e;
+
+.contact-page {
+    min-height: 100vh;
+    padding-top: 5.5rem;
+    color: $contact-paper;
+    background: $contact-ink;
+}
+
+.contact-hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 20vh;
+    overflow: hidden;
+    background: url('../../images/home/contactme.png') center / cover no-repeat;
+    isolation: isolate;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        content: '';
+        background: linear-gradient(90deg, rgba(13, 26, 24, 0.9), rgba(16, 35, 32, 0.48), rgba(13, 26, 24, 0.75)), linear-gradient(0deg, rgba(13, 26, 24, 0.9), transparent 70%);
+    }
+}
+
+.contact-hero__content {
+    width: min(76rem, 100%);
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 6vw, 5rem);
+}
+
+.contact-hero__eyebrow {
+    color: $contact-accent;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.contact-hero__title {
+    margin: 0.55rem 0 0;
+    font-size: clamp(2rem, 4.2vw, 4rem);
+    line-height: 0.92;
+}
+
+.contact-hub {
+    display: grid;
+    justify-items: center;
+    padding: clamp(3rem, 7vw, 6rem) 1.5rem;
+}
+
+.contact-hub__card {
+    width: min(100%, 38rem);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border: 1px solid rgba(140, 227, 207, 0.22);
+    border-radius: 1.75rem;
+    background: linear-gradient(145deg, rgba(39, 58, 55, 0.96), $contact-card);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.26);
+}
+
+.contact-hub__intro {
+    text-align: center;
+
+    h2 {
+        margin: 0.75rem 0 0.35rem;
+        color: $contact-paper;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    p {
+        max-width: 28rem;
+        margin: 0 auto;
+        color: $contact-muted;
+    }
+}
+
+.contact-hub__mark {
+    display: inline-grid;
+    width: 6rem;
+    aspect-ratio: 1;
+    place-items: center;
+    border: 1px solid rgba(140, 227, 207, 0.45);
+    border-radius: 50%;
+    background: url('../../images/contact/camilo-avatar.jpg') center / cover no-repeat;
+}
+
+.contact-hub__links {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.contact-hub__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(140, 227, 207, 0.36);
+    border-radius: 999px;
+    color: $contact-paper;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus-visible {
+        background: rgba(140, 227, 207, 0.12);
+        transform: translateY(-0.15rem);
+    }
+
+    &.is-placeholder {
+        color: $contact-muted;
+    }
+
+    &.is-placeholder span:last-child {
+        color: $contact-accent;
+        font-size: 0.78rem;
+        font-weight: 500;
+    }
+}
+
+.contact-hub__link-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contact-hub__link svg,
+.contact-hub__social svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.contact-hub__link .contact-icon__fill,
+.contact-hub__social .contact-icon__fill {
+    fill: currentcolor;
+    stroke: none;
+}
+
+.contact-hub__feed {
+    margin-top: 1.75rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(140, 227, 207, 0.18);
+    border-radius: 1.25rem;
+    background: rgba(7, 16, 15, 0.2);
+
+    h3 {
+        margin: 0 0 1rem;
+        color: $contact-paper;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.contact-hub__feed-placeholder {
+    display: grid;
+    min-height: 12rem;
+    place-content: center;
+    padding: 1rem;
+    border: 1px dashed rgba(140, 227, 207, 0.38);
+    border-radius: 0.85rem;
+    color: $contact-muted;
+    text-align: center;
+
+    > span {
+        color: $contact-accent;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 0.5rem 0 0.25rem;
+        color: $contact-paper;
+    }
+}
+
+.contact-hub__socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.contact-hub__social {
+    display: grid;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    place-items: center;
+    border: 1px solid rgba(140, 227, 207, 0.38);
+    border-radius: 50%;
+    color: $contact-paper;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus-visible {
+        background: $contact-accent;
+        color: $contact-ink;
+        transform: translateY(-0.15rem);
+    }
+
+    &.is-placeholder {
+        color: rgba(242, 245, 239, 0.35);
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-page {
+        padding-top: 5rem;
+    }
+
+    .contact-hub {
+        padding-inline: 1rem;
+    }
+}
