@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-$instagramFeed = get_theme_mod('contact_instagram_shortcode', '');
+$instagramFeed = get_theme_mod('contact_instagram_shortcode', '[wd_asp id=1]');
 $email = get_theme_mod('contact_email', 'camilo.velosa@frikiup.co');
 $socialLinks = [
     'instagram' => ['label' => 'Instagram', 'url' => get_theme_mod('contact_instagram_url', 'https://www.instagram.com/frikiup/')],
