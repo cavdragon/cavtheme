@@ -218,6 +218,14 @@ $contact-card: #22302e;
 }
 
 @media (max-width: 767px) {
+    .contact-hero__title {
+        font-size: clamp(1.75rem, 8vw, 2.35rem);
+    }
+
+    .contact-hub__intro h2 {
+        font-size: clamp(1.45rem, 7vw, 1.85rem);
+    }
+
     .contact-page {
         padding-top: 5rem;
     }

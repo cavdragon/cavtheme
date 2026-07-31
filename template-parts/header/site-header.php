@@ -15,11 +15,24 @@ $siteName = get_bloginfo('name');
     </div>
 
     <?php if (!$isHome) : ?>
+        <button
+            class="site-header__menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-navigation"
+            aria-label="<?php echo esc_attr__('Abrir menú', 'cavtheme'); ?>"
+        >
+            <span class="site-header__menu-icon" aria-hidden="true"></span>
+        </button>
+
+        <button class="site-header__backdrop" type="button" tabindex="-1" aria-label="<?php echo esc_attr__('Cerrar menú', 'cavtheme'); ?>"></button>
+
         <?php
         wp_nav_menu([
             'theme_location' => 'primary',
             'container'      => 'nav',
             'container_class' => 'site-header__nav',
+            'container_id'   => 'site-navigation',
             'container_aria_label' => __('Primary Menu', 'cavtheme'),
             'menu_class'     => 'menu',
             'fallback_cb'    => false,

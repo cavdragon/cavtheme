@@ -72,6 +72,7 @@ $web-line: rgba(147, 211, 255, 0.2);
 }
 
 .web-development-layout {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 22% 78%;
     width: min(76rem, 100%);
@@ -307,15 +308,35 @@ $web-line: rgba(147, 211, 255, 0.2);
         padding-top: 5rem;
     }
 
+    .web-development-hero__title {
+        font-size: clamp(2rem, 9vw, 2.75rem);
+    }
+
+    .web-development-page--child .web-development-hero__title {
+        font-size: clamp(1.75rem, 8vw, 2.35rem);
+    }
+
+    .web-development-content h2,
+    .web-cv__intro h2 {
+        font-size: clamp(1.55rem, 7vw, 2rem);
+    }
+
     .web-development-layout {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 2rem;
+        padding-top: 1.25rem;
     }
 
     .web-development-sidebar {
         padding: 0 0 1.5rem;
         border-right: 0;
         border-bottom: 1px solid $web-line;
+    }
+
+    .web-development-sidebar__title {
+        min-height: 2.6rem;
+        padding-top: 0.55rem;
+        padding-bottom: 0.55rem;
     }
 
     .web-development-content {
@@ -331,7 +352,20 @@ $web-line: rgba(147, 211, 255, 0.2);
     }
 
     .web-cv__intro {
-        grid-template-columns: minmax(0, 1fr) 6.5rem;
+        grid-template-columns: minmax(0, 1fr);
         gap: 1.25rem;
+    }
+
+    .web-cv__portrait {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        width: 7rem;
+    }
+
+    .web-cv__intro-copy {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
     }
 }

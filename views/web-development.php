@@ -22,7 +22,10 @@ get_header();
 
     <div class="web-development-layout">
         <aside class="web-development-sidebar" aria-label="<?php echo esc_attr__('Navegación de Desarrollo Web', 'cavtheme'); ?>">
-            <p class="web-development-sidebar__title"><?php echo esc_html__('Desarrollo Web', 'cavtheme'); ?></p>
+            <button class="web-development-sidebar__title sidebar-menu__toggle" type="button" aria-expanded="false">
+                <span><?php echo esc_html__('Menú', 'cavtheme'); ?></span>
+                <span class="sidebar-menu__chevron" aria-hidden="true"></span>
+            </button>
             <?php
             wp_nav_menu([
                 'theme_location'  => 'lateralwebdev',

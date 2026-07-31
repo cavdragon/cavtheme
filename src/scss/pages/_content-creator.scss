@@ -77,6 +77,7 @@ $creator-accent: #ff9cc7;
 }
 
 .content-creator-layout {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 22% 78%;
     padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 6vw, 5rem);
@@ -144,9 +145,22 @@ $creator-accent: #ff9cc7;
         padding-top: 5rem;
     }
 
+    .content-creator-hero__title {
+        font-size: clamp(2rem, 9vw, 2.75rem);
+    }
+
+    .content-creator-page--child .content-creator-hero__title {
+        font-size: clamp(1.75rem, 8vw, 2.35rem);
+    }
+
+    .content-creator-content h2 {
+        font-size: clamp(1.55rem, 7vw, 2rem);
+    }
+
     .content-creator-layout {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 2rem;
+        padding-top: 1.25rem;
     }
 
     .content-creator-sidebar {

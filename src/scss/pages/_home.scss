@@ -176,6 +176,18 @@ $home-transition: 560ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @media (max-width: 767px) {
+    .home-page-active {
+        overflow-y: auto;
+    }
+
+    .home-page {
+        position: relative;
+        height: calc(100svh - 5rem);
+        min-height: 34rem;
+        overflow: hidden;
+        inset: auto;
+    }
+
     .home-hero__panels { flex-direction: column; }
 
     .home-panel {
@@ -188,7 +200,7 @@ $home-transition: 560ms cubic-bezier(0.22, 1, 0.36, 1);
         margin-bottom: 0;
         gap: 0.45rem;
     }
-    .home-panel__title { font-size: clamp(1.35rem, 7vw, 2rem); }
+    .home-panel__title { font-size: clamp(1.2rem, 6vw, 1.75rem); }
 
     .home-panel__eyebrow,
     .home-panel__description { display: none; }

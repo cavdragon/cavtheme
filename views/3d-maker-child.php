@@ -21,7 +21,10 @@ get_header();
 
     <div class="maker-3d-layout">
         <aside class="maker-3d-sidebar" aria-label="<?php echo esc_attr__('Navegación de 3D Maker', 'cavtheme'); ?>">
-            <p class="maker-3d-sidebar__title"><?php echo esc_html__('3D Maker', 'cavtheme'); ?></p>
+            <button class="maker-3d-sidebar__title sidebar-menu__toggle" type="button" aria-expanded="false">
+                <span><?php echo esc_html__('Menú', 'cavtheme'); ?></span>
+                <span class="sidebar-menu__chevron" aria-hidden="true"></span>
+            </button>
             <?php
             wp_nav_menu([
                 'theme_location'  => 'lateral3dmaker',

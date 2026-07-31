@@ -21,7 +21,10 @@ get_header();
 
     <div class="content-creator-layout">
         <aside class="content-creator-sidebar" aria-label="<?php echo esc_attr__('Navegación de Creador de Contenido', 'cavtheme'); ?>">
-            <p class="content-creator-sidebar__title"><?php echo esc_html__('Creador de Contenido', 'cavtheme'); ?></p>
+            <button class="content-creator-sidebar__title sidebar-menu__toggle" type="button" aria-expanded="false">
+                <span><?php echo esc_html__('Menú', 'cavtheme'); ?></span>
+                <span class="sidebar-menu__chevron" aria-hidden="true"></span>
+            </button>
             <?php
             wp_nav_menu([
                 'theme_location'  => 'lateralcontentcreator',

@@ -77,6 +77,7 @@ $maker-accent: #bcaaff;
 }
 
 .maker-3d-layout {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 22% 78%;
     padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 6vw, 5rem);
@@ -144,9 +145,22 @@ $maker-accent: #bcaaff;
         padding-top: 5rem;
     }
 
+    .maker-3d-hero__title {
+        font-size: clamp(2rem, 9vw, 2.75rem);
+    }
+
+    .maker-3d-page--child .maker-3d-hero__title {
+        font-size: clamp(1.75rem, 8vw, 2.35rem);
+    }
+
+    .maker-3d-content h2 {
+        font-size: clamp(1.55rem, 7vw, 2rem);
+    }
+
     .maker-3d-layout {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 2rem;
+        padding-top: 1.25rem;
     }
 
     .maker-3d-sidebar {

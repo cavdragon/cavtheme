@@ -30,3 +30,9 @@ $footer-z-index: 30;
     font-size: 0.7rem;
     line-height: 1.4;
 }
+
+@media (max-width: 767px) {
+    .site-footer--home {
+        position: static;
+    }
+}
