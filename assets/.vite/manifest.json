@@ -28,12 +28,12 @@
     "src": "src/images/home/webmaster.png"
   },
   "src/js/main.js": {
-    "file": "js/app-BdmKGeuH.js",
+    "file": "js/app-CIfWmyOy.js",
     "name": "app",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "css/app-d5MzIeLp.css"
+      "css/app-CgjDqyAU.css"
     ],
     "assets": [
       "images/logocavsitio-DlMyZI1o.png",
